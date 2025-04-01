@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Button } from "../../components/Button/Button"
+import { Container } from "../Container/Container"
 
 export function HomePage() {
   const [click, setClick] = useState(0)
@@ -62,6 +63,10 @@ export function HomePage() {
       <div>Вы ввели: {value}</div>
 
       <button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Наведи на меня</button>
+
+      <Container>
+        <h2>Это дочерний компонент</h2>
+      </Container>
     </div>
   )
 }
